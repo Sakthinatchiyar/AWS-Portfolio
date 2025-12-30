@@ -1,0 +1,70 @@
+:root {
+    --aws-blue: #232f3e;
+    --aws-accent: #0073bb;
+    --aws-orange: #ff9900;
+    --light-gray: #f9f9f9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+header {
+    background-color: var(--aws-blue);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-bar { margin: 20px 0; font-size: 0.9rem; color: #bdc3c7; }
+.contact-bar span { margin: 0 15px; }
+
+.hero-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.hero-links a:hover { background: white; color: var(--aws-blue); }
+
+.container { padding: 50px 15%; text-align: center; }
+.bg-light { background-color: var(--light-gray); }
+
+.badge-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.badge-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--aws-accent);
+}
+
+.badge-card i { font-size: 2.5rem; color: var(--aws-accent); margin-bottom: 10px; }
+.badge-card.highlight { border-top-color: var(--aws-orange); }
+
+.skill-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+.skill-tag { background: var(--aws-blue); color: white; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; }
+
+.skillrack-box {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px dashed var(--aws-accent);
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.cert-list { text-align: left; max-width: 600px; margin: 0 auto; }
+.cert-list ul { padding-left: 20px; margin-top: 15px; }
+.cert-list li { margin-bottom: 8px; }
+
+footer { background: #111; color: #777; padding: 20px; font-size: 0.8rem; }
